@@ -53,10 +53,4 @@ public class ProductCommentsController {
 	public List<Comment> getAllComments(@PathVariable String productId) {
 		return commentsService.getComments(productId);
 	}
-
-	@GetMapping("/products")
-	public String getProduct() {
-		return "Hello Product!";
-	}
-
 }
